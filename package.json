@@ -2,7 +2,7 @@
   "name": "wirehead-ui",
   "theme": "ui",
   "version": "0.1.0",
-  "description": " A cyberpunk Atom theme inspired by the future. Slotted for an official v1.0.0 release in 2077.",
+  "description": "A cyberpunk Atom UI theme.",
   "keywords": [
     "ui",
     "theme"
