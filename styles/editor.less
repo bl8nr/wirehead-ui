@@ -9,10 +9,18 @@ atom-text-editor[mini] {
   padding-left: @component-padding/2;
   color: @text-color;
   border-radius: @component-border-radius;
-  background-color: @input-background-color;
+  // old background-color: @input-background-color;
+  background-color: transparent;
+  border: 1px solid transparent;
 
+  // when a text field is focused, provide a light blue neon border effect
   &.is-focused {
-    background-color: darken(@input-background-color, 5%);
+    background: #fff;
+    border: 1px solid rgb(97, 210, 255);
+    background-color: transparent;
+    // old background-color: darken(@input-background-color, 5%);
+    box-shadow: 0 0 4px 0px rgb(75, 213, 255), 0 0 4px 0px rgb(75, 213, 255) inset;
+    opacity: 1 !important;
   }
 
   .placeholder-text {
@@ -21,4 +29,5 @@ atom-text-editor[mini] {
   .selection .region {
     background-color: @background-color-selected;
   }
+
 }
