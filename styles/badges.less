@@ -1,0 +1,42 @@
+.badge {
+  background-color: transparent;
+  opacity: 1 !important;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(255,255,255, .1), 0 0 5px rgba(255,255,255, .6), 0 0 10px rgba(255,255,255, .15);
+
+  &.badge-info {
+    border: 1px solid @info-color;
+    background-color: transparent;
+    box-shadow: 0 0 4px 0px @info-color, 0 0 4px 0px @info-color inset;
+    opacity: 1 !important;
+    text-shadow: 0 0 2px rgba(46,226,250,0.1), 0 0 5px rgba(46,226,250,0.6), 0 0 10px rgba(46,226,250,0.15);
+    color: @info-color;
+  }
+
+  &.badge-success {
+    border: 1px solid @success-color;
+    background-color: transparent;
+    box-shadow: 0 0 4px 0px @success-color, 0 0 4px 0px @success-color inset;
+    text-shadow: 0 0 2px rgba(114,241,184,0.1), 0 0 5px rgba(114,241,184,0.6), 0 0 10px rgba(114,241,184,0.15);
+    opacity: 1 !important;
+    color: @success-color;
+  }
+
+  &.badge-warning {
+    border: 1px solid @warning-color;
+    background-color: transparent;
+    box-shadow: 0 0 4px 0px @warning-color, 0 0 4px 0px @warning-color inset;
+    text-shadow: 0 0 2px rgba(254,222,93,0.1), 0 0 5px rgba(254,222,93,0.6), 0 0 10px rgba(254,222,93,0.15);
+    opacity: 1 !important;
+    color: @warning-color;
+  }
+
+  &.badge-error {
+    border: 1px solid @error-color;
+    background-color: transparent;
+    box-shadow: 0 0 4px 0px @error-color, 0 0 4px 0px @error-color inset;
+    text-shadow: 0 0 2px rgba(249,42,173,0.1), 0 0 5px rgba(249,42,173,0.6), 0 0 10px rgba(249,42,173, 0.15);
+    opacity: 1 !important;
+    color: @error-color;
+  }
+}

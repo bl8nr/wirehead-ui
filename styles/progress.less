@@ -5,6 +5,44 @@
 // The `progress` element is unstyled and defined by the OS.
 // See https://css-tricks.com/html5-progress-element/ in case you want to customize it.
 
+progress {
+  -webkit-appearance: none;
+
+  &::-webkit-progress-bar {
+    background-color: transparent;
+  }
+
+  &::-webkit-progress-value {
+    background: linear-gradient(270deg, #fc28a8, #03edf9);
+  }
+
+  // Is buffering (when no value is set)
+  &:indeterminate {
+    background: linear-gradient(270deg, #fc28a8, #03edf9);
+    background-size: 150% 150%;
+
+    -webkit-animation: ProgressBuffering 3s ease infinite;
+    -moz-animation: ProgressBuffering 3s ease infinite;
+    animation: ProgressBuffering 3s ease infinite;
+
+    @-webkit-keyframes ProgressBuffering {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes ProgressBuffering {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes ProgressBuffering {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+  }
+}
+
 
 // Spinner -------------------
 

@@ -17,16 +17,21 @@
 @text-color-highlight: hsl(0,0%,94%);
 @text-color-selected:  hsl(0,0%,100%);
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@info-color: #2ee2fa;
+@success-color: #72f1b8;
+@warning-color: #fede5d;
+@error-color: #f92aad;
+
+@text-color-info: @info-color;
+@text-color-success: @success-color;
+@text-color-warning: @warning-color;
+@text-color-error: @error-color;
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-info: darken(@info-color, 20%);
+@background-color-success: darken(@success-color, 20%);
+@background-color-warning: darken(@warning-color, 20%);
+@background-color-error: darken(@error-color, 20%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  #2a2139// rgba(255,255,255,0.21176470588235294); //lighten(@base-background-color, 10%);
